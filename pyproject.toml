@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "digilog"
+version = "0.1.0"
+description = "A simple journal companion for Digimon Card Game"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "PeCoBe"},
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/PeCoBe/digilog"
+Repository = "https://github.com/PeCoBe/digilog.git"
+Issues = "https://github.com/PeCoBe/digilog/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/digilog"]
